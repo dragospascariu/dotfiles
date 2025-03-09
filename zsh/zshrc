@@ -114,18 +114,6 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-function chungus {
- #if [[ $(networksetup -getairportnetwork en0 | awk '{print $4}' | head -n 1) == "Falconio" ]]; then
-  if [[ $(system_profiler SPAirPortDataType | awk '/Current Network/ {getline;$1=$1;print $0 | "tr -d ':'";exit}') == "Brandwatch CPH Staff" ]]; then
-    # In office
-    ssh chungus
-  else
-    echo "Cision VPN connected?"
-    read
-    ssh chungus-via-runner
-  fi
-}
-
 eval "$(starship init zsh)"
 
 # NOTE: Zoxide
