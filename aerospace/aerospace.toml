@@ -200,14 +200,6 @@ if.app-id = 'com.mitchellh.ghostty'
 run = "move-node-to-workspace T"
 
 [[on-window-detected]]
-if.app-id = 'worg.mozilla.com.zen.browser'
+if.app-id = 'app.zen-browser.zen'
 run = "move-node-to-workspace B"
-
-[[on-window-detected]]
-if.app-id = 'notion.id'
-run = "move-node-to-workspace N"
-
-[[on-window-detected]]
-if.app-id = 'md.obsidian'
-run = "move-node-to-workspace N"
 
