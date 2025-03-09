@@ -6,6 +6,6 @@ My personal configuration files for macOS/Linux. Includes setup scripts and conf
 
 Clone and symlink:  
 ```bash
-git clone https://github.com/yourusername/dotfiles.git ~/.dotfiles
+git clone https://github.com/dragospascariu/dotfiles.git
 cd ~/.dotfiles
 
