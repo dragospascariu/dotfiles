@@ -8,4 +8,15 @@ Clone and symlink:
 ```bash
 git clone https://github.com/dragospascariu/dotfiles.git
 cd ~/.dotfiles
+```
 
+## Dependencies 
+```
+fzf
+fd
+rg
+zoxide
+eza
+tldr
+mas
+```
