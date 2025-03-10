@@ -10,7 +10,7 @@ git clone https://github.com/dragospascariu/dotfiles.git
 cd ~/.dotfiles
 ```
 
-## Dependencies 
+## Dependencies and extras
 - `fzf`  
 - `fd`  
 - `rg`  
