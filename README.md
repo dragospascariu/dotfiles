@@ -11,12 +11,10 @@ cd ~/.dotfiles
 ```
 
 ## Dependencies 
-```
-fzf
-fd
-rg
-zoxide
-eza
-tldr
-mas
-```
+- `fzf`  
+- `fd`  
+- `rg`  
+- `zoxide`  
+- `eza`  
+- `tldr`  
+- `mas`  
