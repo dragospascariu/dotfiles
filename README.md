@@ -11,6 +11,7 @@ cd ~/.dotfiles
 ```
 
 ## Dependencies and extras
+- `homebrew`
 - `fzf`  
 - `fd`  
 - `rg`  
