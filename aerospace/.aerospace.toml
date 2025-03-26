@@ -95,6 +95,7 @@ outer.right = 20
 #Disable annoying and useless "hide application" shortcut
 cmd-h = []     # Disable "hide application"
 cmd-alt-h = [] # Disable "hide others"
+cmd-m = []     # Disable "minimize application"
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
 alt-slash = 'layout tiles horizontal vertical'
@@ -134,6 +135,7 @@ alt-n = 'workspace N' # for notes
 alt-p = 'workspace P'
 alt-t = 'workspace T' # for terminal shell
 alt-v = 'workspace V'
+
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
 alt-shift-2 = 'move-node-to-workspace 2'
@@ -196,10 +198,25 @@ alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
 [[on-window-detected]]
-if.app-id = 'com.mitchellh.ghostty'
-run = "move-node-to-workspace T"
+if.app-id = 'com.microsoft.rdc.macos'
+run = 'layout floating'
 
 [[on-window-detected]]
-if.app-id = 'app.zen-browser.zen'
-run = "move-node-to-workspace B"
+if.app-id = 'us.zoom.xos'
+run = 'layout floating'
 
+[[on-window-detected]]
+if.app-id = 'com.cisco.secureclient.gui'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.1password.1password'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.splashtop.stb.macosx'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Music'
+run = 'layout floating'
