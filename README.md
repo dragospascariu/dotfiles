@@ -14,7 +14,7 @@ cd ~/.dotfiles
 - `homebrew`
 - `fzf`  
 - `fd`  
-- `rg`  
+- `ripgrep`  
 - `zoxide`  
 - `eza`  
 - `tldr`  
