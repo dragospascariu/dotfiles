@@ -1,0 +1,46 @@
+#Reload tmux config
+bind r source-file ~/.tmux.conf \; display-message "tmux config reloaded!"
+
+# Set terminal and colors
+set -g default-terminal "tmux-256color"
+set -ag terminal-overrides ",xterm-256color:RGB"
+
+# Set prefix
+set -g prefix C-s
+set -g mouse on
+set -g base-index 1
+
+# Use vi keys for tmux
+set-window-option -g mode-keys vi
+
+# Pane navigation with hjkl keys
+bind-key h select-pane -L
+bind-key j select-pane -D
+bind-key k select-pane -U
+bind-key l select-pane -R
+
+# Set status position
+set-option -g status-position top
+
+set-environment -gF TMUX_PLUGIN_MANAGER_PATH '#{HOME}/.local/share/tmux/plugins/'
+
+if 'test ! -d "${TMUX_PLUGIN_MANAGER_PATH}/tpm"' {
+  run 'mkdir -p "${TMUX_PLUGIN_MANAGER_PATH}"'
+  run 'git clone https://github.com/tmux-plugins/tpm "${TMUX_PLUGIN_MANAGER_PATH}/tpm"'
+  run '${TMUX_PLUGIN_MANAGER_PATH}/tpm/bin/install_plugins'
+}
+
+# Plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'niksingh710/minimal-tmux-status'
+
+#config
+set -g @minimal-tmux-use-arrow true
+set -g @minimal-tmux-right-arrow ""
+set -g @minimal-tmux-left-arrow ""
+set -g @minimal-tmux-status "bottom"
+set -g @minimal-tmux-expanded-icon "󰊓 "
+
+
+# Initialize TPM (must stay at the bottom)
+run '#{TMUX_PLUGIN_MANAGER_PATH}/tpm/tpm'
