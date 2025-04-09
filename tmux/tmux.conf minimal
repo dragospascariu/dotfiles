@@ -38,7 +38,7 @@ set -g @plugin 'niksingh710/minimal-tmux-status'
 set -g @minimal-tmux-use-arrow true
 set -g @minimal-tmux-right-arrow ""
 set -g @minimal-tmux-left-arrow ""
-set -g @minimal-tmux-status "bottom"
+set -g @minimal-tmux-status "top"
 set -g @minimal-tmux-expanded-icon "󰊓 "
 
 
