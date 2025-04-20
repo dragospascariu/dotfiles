@@ -11,11 +11,9 @@ cd ~/.dotfiles
 ```
 
 ## Dependencies and extras
-- `homebrew`
 - `fzf`  
 - `fd`  
 - `ripgrep`  
 - `zoxide`  
 - `eza`  
 - `tldr`  
-- `mas`  
